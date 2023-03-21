@@ -1,7 +1,11 @@
 const navbarItems = [
     {
       title: "About me",
-      link: "/about",
+      link: "/",
+    },
+    {
+      title: "Skills",
+      link: "/skills",
     },
     {
       title: "My work",
