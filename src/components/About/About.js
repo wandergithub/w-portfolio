@@ -1,7 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "../shared/Button/Button";
 import "./About.scss";
 import me from "./assets/me.webp";
+import { FaArrowRight } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -21,7 +21,7 @@ const About = () => {
           developed an interest in electronics and technology. In my free time,
           I enjoy reading and exercising.
         </p>
-        <Button />
+        <Button name={"More about me"} iconComponent={<FaArrowRight />} />
       </div>
     </div>
   );

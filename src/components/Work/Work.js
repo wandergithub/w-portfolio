@@ -1,6 +1,8 @@
 import "./Work.scss";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import image1 from "./Assets/portfolio-6.webp";
+import Button from "../shared/Button/Button";
+import { FaArrowDown } from "react-icons/fa";
 
 const projects = [
   {
@@ -52,6 +54,9 @@ const Work = () => {
             />
           );
         })}
+      </div>
+      <div style={{alignSelf: "center", margin: "20px 0px"}}>
+        <Button name={"See More"} iconComponent={<FaArrowDown />} />
       </div>
     </>
   );

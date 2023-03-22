@@ -1,10 +1,11 @@
 import "./Button.scss";
 
-const Button = () => {
+const Button = (props) => {
+    const { name, iconComponent } = props;
   return (
     <button className="button" style={{ margin: "20px 0px" }}>
-      <span className="button-text">more about me</span>
-      <span className="button-icon"></span>
+      <span className="button-text">{name}</span>
+      <span className="button-icon">{iconComponent}</span>
     </button>
   );
 };
