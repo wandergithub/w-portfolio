@@ -20,7 +20,7 @@ const About = () => {
           developed an interest in electronics and technology. In my free time,
           I enjoy reading and exercising.
         </p>
-        <button className="button">
+        <button className="button" style={{margin: "20px 0px"}}>
           <span className="button-text">more about me</span>
           <span className="button-icon"></span>
         </button>

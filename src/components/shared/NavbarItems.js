@@ -4,10 +4,6 @@ const navbarItems = [
       link: "/",
     },
     {
-      title: "Skills",
-      link: "/skills",
-    },
-    {
       title: "My work",
       link: "/work",
     },

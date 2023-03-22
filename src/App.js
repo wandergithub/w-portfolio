@@ -28,7 +28,6 @@ function App() {
       <div style={style.separator}></div>
       <Routes>
         <Route path='/' element={<About />} />
-        <Route path='/skills' element={<Skills />} />
         <Route path='/work' element={<Work />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
