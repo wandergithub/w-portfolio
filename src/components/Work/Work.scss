@@ -68,6 +68,11 @@ body[data-aos-easing="ease"] [data-aos] {
   transform: translateY(-50%);
 }
 
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 @media (min-width: 576px) {
   .text-sm-center {
     text-align: center !important;

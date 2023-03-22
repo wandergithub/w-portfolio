@@ -41,7 +41,7 @@ const Work = () => {
         <span class="title-bg">works</span>
       </div>
 
-      <div>
+      <div className="project-container">
         {projects.map((project) => {
           return (
             <ProjectCard
