@@ -1,12 +1,13 @@
 import "./About.scss";
 import me from "./assets/me.webp";
+
 const About = () => {
   return (
     <div className="about">
       <div className="me">
         <img src={me} />
       </div>
-      <div>
+      <div className="about-content">
         <h1 className="title-1 text-uppercase">
           i'm Wander gonzalez.
           <br />
