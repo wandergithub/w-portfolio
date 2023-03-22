@@ -37,3 +37,8 @@ $font-2: "Open Sans", sans-serif;
 .text-uppercase {
   text-transform: uppercase !important;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+}

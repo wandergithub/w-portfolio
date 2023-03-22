@@ -8,6 +8,13 @@ import Work from './components/Work/Work';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 
+const style = {
+  separator: {
+    height: '70px',
+  }
+};
+
+
 function App() {
   const [isopen, setisopen] = useState(false);
   const toggle = () => {
@@ -18,6 +25,7 @@ function App() {
     <>
       <Navbar toggle={toggle} />
       <Sidebar isopen={isopen} toggle={toggle} />
+      <div style={style.separator}></div>
       <Routes>
         <Route path='/' element={<About />} />
         <Route path='/skills' element={<Skills />} />
