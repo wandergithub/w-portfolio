@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./About.scss";
 import me from "./assets/me.webp";
 
@@ -19,7 +20,10 @@ const About = () => {
           developed an interest in electronics and technology. In my free time,
           I enjoy reading and exercising.
         </p>
-        <button> More About Me</button>
+        <button className="button">
+          <span className="button-text">more about me</span>
+          <span className="button-icon"></span>
+        </button>
       </div>
     </div>
   );
