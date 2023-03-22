@@ -1,4 +1,30 @@
-import './Work.scss';
+import "./Work.scss";
+import ProjectCard from "../ProjectCard/ProjectCard";
+import image1 from "./Assets/portfolio-6.webp";
+
+const projects = [
+  {
+    title: "E-commerce",
+    image: image1,
+    description:
+      "Completely responsive E-commerce web page. build with React/Redux and MaterialUI-styled-components. This allows the user to navigate through different categories of items, filter them by category and add them to the shopping cart.",
+    links: [{ image: "icon image here", href: "link url here" }],
+  },
+  {
+    title: "E-commerce",
+    image: image1,
+    description:
+      "Completely responsive E-commerce web page. build with React/Redux and MaterialUI-styled-components. This allows the user to navigate through different categories of items, filter them by category and add them to the shopping cart.",
+    links: [{ image: "icon image here", href: "link url here" }],
+  },
+  {
+    title: "E-commerce",
+    image: image1,
+    description:
+      "Completely responsive E-commerce web page. build with React/Redux and MaterialUI-styled-components. This allows the user to navigate through different categories of items, filter them by category and add them to the shopping cart.",
+    links: [{ image: "icon image here", href: "link url here" }],
+  },
+];
 
 const Work = () => {
   return (
@@ -13,6 +39,19 @@ const Work = () => {
           <span>portfolio</span>
         </h1>
         <span class="title-bg">works</span>
+      </div>
+
+      <div>
+        {projects.map((project) => {
+          return (
+            <ProjectCard
+              image={project.image}
+              title={project.title}
+              description={project.description}
+              links={project.links}
+            />
+          );
+        })}
       </div>
     </>
   );

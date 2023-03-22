@@ -46,15 +46,6 @@ body[data-aos-easing="ease"] [data-aos] {
   width: 100%;
 }
 
-@media (min-width: 576px) {
-  .text-sm-center {
-    text-align: center !important;
-  }
-
-  .text-sm-center {
-    text-align: center !important;
-  }
-}
 
 *,
 :after,
@@ -75,4 +66,14 @@ body[data-aos-easing="ease"] [data-aos] {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+@media (min-width: 576px) {
+  .text-sm-center {
+    text-align: center !important;
+  }
+
+  .text-sm-center {
+    text-align: center !important;
+  }
 }
