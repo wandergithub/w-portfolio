@@ -66,7 +66,9 @@
 .card .details .center ul {
   margin: 10px auto 0;
   padding: 0;
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card .details .center ul li {
   list-style: none;
@@ -75,14 +77,18 @@
 }
 .card .details .center ul li a {
   display: block;
-  background: $basic-color;
-  color: #fff;
-  width: 30px;
-  height: 30px;
+  background: $transparent;
+  color: $primary-color;
+  width: 50px;
+  height: 50px;
   line-height: 30px;
   text-align: center;
+  padding-top: 7px;
   transform: 0.5s;
 }
+
 .card .details .center ul li a:hover {
-  background: #ff3636;
+  border-radius: 2px;
+  background-color: $primary-color;
+  color: $basic-color;
 }

@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
               return (
                 <li>
                   <a href={link.href}>
-                    <img src={link.image} />
+                    {link.image}
                   </a>
                 </li>
               );
