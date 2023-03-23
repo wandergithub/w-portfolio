@@ -88,4 +88,19 @@ body[data-aos-easing="ease"] [data-aos] {
     align-items: center;
     gap: 30px;
   }
+  .title-section {
+    text-align: center;
+  }
+
+  .title-section h1 {
+    color: #fff;
+    font-size: 43px;
+    font-weight: 900 !important;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .title-bg {
+    font-size: 85px;
+  }
 }
