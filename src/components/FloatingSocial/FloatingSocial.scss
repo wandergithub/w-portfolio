@@ -1,0 +1,26 @@
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 15px;
+  top: 40vh;
+}
+
+.ig {
+  background: radial-gradient(
+      circle at 25% 110%,
+      #fdf497 0,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    ),
+    radial-gradient(
+      circle at 25% 110%,
+      #b9a800 0,
+      #938500 5%,
+      #b10f00 45%,
+      #8c0061 60%,
+      #002ca9 90%
+    );
+}
