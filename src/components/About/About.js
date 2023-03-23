@@ -33,28 +33,6 @@ const About = () => {
           <Button name={"More about me"} iconComponent={<FaArrowRight />} />
         </div>
       </div>
-      <ul>
-        <li>
-          <a href="#">
-            <TbBrandGithub title="Github icon" size={"2em"} className="icon" />{" "}
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i className="fab fa-twitter icon"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i className="fab fa-linkedin-in icon"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i className="fab fa-google-plus-g icon"></i>
-          </a>
-        </li>
-      </ul>
     </div>
   );
 };
