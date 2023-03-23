@@ -9,6 +9,24 @@
   padding-top: 10vh;
 }
 
+.title-1 {
+  font-family: $font-1;
+  font-size: $title-1;
+  color: $primary-color;
+  line-height: 48px;
+
+  span {
+    color: $basic-color;
+  }
+}
+
+.text-p {
+  font-family: $font-2;
+  font-size: $text;
+  color: $basic-color;
+  line-height: 30px;
+}
+
 .me {
   margin: 40px 0px 35px 35px;
   img {
@@ -33,7 +51,7 @@
     gap: 0px;
     align-items: center;
     justify-content: center;
-    line-height: 30px;
+    padding-top: 10px;
   }
 
   .me {
@@ -44,8 +62,8 @@
       display: block;
       margin: 0 auto 25px;
       background-color: #252525;
-      height: 230px;
-      width: 230px;
+      height: 130px;
+      width: 130px;
     }
   }
 
@@ -56,9 +74,12 @@
 
   .title-1 {
     font-size: 29px;
+    line-height: 32px;
+
   }
 
   .text-p {
     font-size: 14px;
+    line-height: 20px;
   }
 }

@@ -16,23 +16,6 @@ $text: 16px;
 $font-1: "Poppins", sans-serif;
 $font-2: "Open Sans", sans-serif;
 
-.title-1 {
-  font-family: $font-1;
-  font-size: $title-1;
-  color: $primary-color;
-  line-height: 48px;
-
-  span {
-    color: $basic-color;
-  }
-}
-
-.text-p {
-    font-family: $font-2;
-    font-size: $text;
-    color: $basic-color;
-    line-height: 30px;  
-}
 
 .text-uppercase {
   text-transform: uppercase !important;
