@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import About from './components/About/About';
 import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
-import Lab from './components/Lab/Lav';
+import Lab from './components/Lab/Lab';
 
 const style = {
   separator: {
