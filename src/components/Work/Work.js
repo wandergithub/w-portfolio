@@ -61,7 +61,7 @@ const Work = () => {
   return (
     <>
       <div
-        class="title-section text-left text-sm-center aos-init aos-animate"
+        className="title-section text-left text-sm-center aos-init aos-animate"
         data-aos="fade-up"
         data-aos-duration="1200"
       >
@@ -69,7 +69,7 @@ const Work = () => {
           my
           <span>portfolio</span>
         </h1>
-        <span class="title-bg">works</span>
+        <span className="title-bg">works</span>
       </div>
 
       <div className="project-container">

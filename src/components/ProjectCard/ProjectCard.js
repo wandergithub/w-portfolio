@@ -4,12 +4,12 @@ const ProjectCard = (props) => {
   const { image, title, description, links } = props;
 
   return (
-    <div class="card">
-      <div class="image">
+    <div className="card">
+      <div className="image">
         <img src={image} />
       </div>
-      <div class="details">
-        <div class="center">
+      <div className="details">
+        <div className="center">
           <h1>
             {title}
             <br />
