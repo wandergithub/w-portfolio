@@ -8,8 +8,8 @@ const navbarItems = [
       link: "/work",
     },
     {
-      title: "Blog",
-      link: "/blog",
+      title: "Lab",
+      link: "/lab",
     },
     {
       title: "Contact",
