@@ -1,15 +1,19 @@
 import "./Lab.scss";
+import ProjectCard from "../ProjectCard/ProjectCard";
+import projects from "./Data/projects";
+import Button from "../shared/Button/Button";
+import { FaArrowDown } from "react-icons/fa";
 
 const Lab = () => {
   return (
     <div
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      gap: "40px",
-    }}
-  >
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: "40px",
+      }}
+    >
       <div
         className="title-section text-left text-sm-center aos-init aos-animate"
         data-aos="fade-up"
@@ -25,11 +29,23 @@ const Lab = () => {
         ReactJS/Web Components, blogs, fun coding and everything else
         accomplished on my spare software development time.
       </p>
-      <ul>
-        <li>
-            
-        </li>
+      <ul style={{ listStyle: "none", display: "flex" }}>
+        {projects.map((project) => {
+          return (
+            <li>
+              <ProjectCard
+                image={project.image}
+                title={project.title}
+                description={project.description}
+                links={project.links}
+              />
+            </li>
+          );
+        })}
       </ul>
+      <div style={{ alignSelf: "center", margin: "20px 0px" }}>
+        <Button name={"See More"} iconComponent={<FaArrowDown />} />
+      </div>
     </div>
   );
 };
