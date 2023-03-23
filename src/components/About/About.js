@@ -3,6 +3,7 @@ import "./About.scss";
 import me from "./assets/me.webp";
 import { FaArrowRight } from "react-icons/fa";
 import { TbBrandGithub } from "react-icons/tb";
+import FloatingSocial from "../FloatingSocial/FloatingSocial";
 
 const About = () => {
   return (
@@ -33,6 +34,7 @@ const About = () => {
           <Button name={"More about me"} iconComponent={<FaArrowRight />} />
         </div>
       </div>
+      <FloatingSocial />
     </div>
   );
 };

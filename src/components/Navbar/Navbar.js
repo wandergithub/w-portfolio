@@ -26,7 +26,7 @@ const Navbar = ({ toggle }) => {
           <path d="M3.022 12.628c-.283 -4.043 8.717 -7.228 11.248 -2.688"></path>
           <path d="M12.628 20.978c-2.993 .21 -5.162 -4.725 -3.567 -9.748"></path>
         </svg>
-        Name
+        Wander Gonzalez
       </Link>
       <div className="menu-items">
         {navbarItems.map((item, index) => (
