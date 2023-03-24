@@ -32,3 +32,22 @@
 .contact-icon {
     align-self: center;
 }
+
+.contact-icons {
+    background: #2b2a2a;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-size: 17px;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    transition: .3s;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icons:hover{
+    background-color: $primary-color;
+}

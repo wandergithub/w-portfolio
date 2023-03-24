@@ -63,37 +63,37 @@ const Contact = () => {
             <a
               href="https://www.linkedin.com/in/wander-gonzalez/"
               target="_blank"
-              style={{ backgroundColor: "#2b2a2a" }}
+              className="contact-icons"
             >
-              <FaLinkedinIn size={"2em"} color={"white"} />
+              <FaLinkedinIn size={"1.3em"} color={"white"} />
             </a>
             <a
               href="https://github.com/wandergithub"
               target="_blank"
-              style={{ backgroundColor: "#2b2a2a" }}
+              className="contact-icons"
             >
-              <BsGithub size={"2em"} color={"white"} />
+              <BsGithub size={"1.3em"} color={"white"} />
             </a>
             <a
               href="https://medium.com/@wandergonzalez0"
               target="_blank"
-              style={{ backgroundColor: "#2b2a2a" }}
+              className="contact-icons"
             >
-              <SiMedium size={"2em"} color={"white"} />
+              <SiMedium size={"1.3em"} color={"white"} />
             </a>
             <a
               href="https://www.instagram.com/wander_acg/"
               target="_blank"
-              style={{ backgroundColor: "#2b2a2a" }}
+              className="contact-icons"
             >
-              <GrInstagram size={"2em"} color={"white"} />
+              <GrInstagram size={"1.3em"} color={"white"} />
             </a>
             <a
               href="https://twitter.com/wanderklk1"
               target="_blank"
-              style={{ backgroundColor: "#2b2a2a" }}
+              className="contact-icons"
             >
-              <GrTwitter size={"2em"} color={"white"} />
+              <GrTwitter size={"1.3em"} color={"white"} />
             </a>
           </div>
         </div>
