@@ -29,7 +29,7 @@ const Lab = () => {
         ReactJS/Web Components, blogs, fun coding and everything else
         accomplished on my spare software development time.
       </p>
-      <ul style={{ listStyle: "none", display: "flex" }}>
+      <ul className="project-container">
         {projects.map((project) => {
           return (
             <li>
