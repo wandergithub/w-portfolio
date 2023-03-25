@@ -23,7 +23,7 @@ const Lab = () => {
           Code
           <span> Lab</span>
         </h1>
-        <span className="title-bg">Laboratory</span>
+        <span className="title-bg bg-large">Laboratory</span>
       </div>
       <p className="text-p" style={{ maxWidth: "70%" }}>
         ReactJS/Web Components, blogs, fun coding and everything else
