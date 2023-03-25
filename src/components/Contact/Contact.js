@@ -103,7 +103,7 @@ const Contact = () => {
           <input type={"text"} placeholder={"SUBJECT"} className="input" />
           <textarea type={"text"} placeholder={"MESSAJE"} className="input" />
           <Button
-            name={"See More"}
+            name={"SEND MESSAGE"}
             iconComponent={<RiMailSendLine size={"1.5em"} />}
           />
         </form>
