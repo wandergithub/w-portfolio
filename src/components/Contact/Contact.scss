@@ -30,24 +30,39 @@
 }
 
 .contact-icon {
-    align-self: center;
+  align-self: center;
 }
 
 .contact-icons {
-    background: #2b2a2a;
-    border-radius: 50%;
-    color: #fff;
-    display: flex;
-    font-size: 17px;
-    height: 40px;
-    line-height: 42px;
-    text-align: center;
-    transition: .3s;
-    width: 40px;
-    justify-content: center;
-    align-items: center;
+  background: #2b2a2a;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  font-size: 17px;
+  height: 40px;
+  line-height: 42px;
+  text-align: center;
+  transition: 0.3s;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact-icons:hover{
-    background-color: $primary-color;
+.contact-icons:hover {
+  background-color: $primary-color;
+}
+
+// form
+.input {
+  font-family: $font-2;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  background: #252525;
+  border: 1px solid #111;
+  border-radius: 30px;
+  color: #000000;
+  outline: none !important;
+  padding: 11px 26px;
+  transition: 0.3s;
 }

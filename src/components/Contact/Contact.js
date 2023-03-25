@@ -98,10 +98,10 @@ const Contact = () => {
           </div>
         </div>
         <form>
-          <input type={"text"} placeholder={"NAME"} />
-          <input type={"text"} placeholder={"EMAIL"} />
-          <input type={"text"} placeholder={"SUBJECT"} />
-          <textarea type={"text"} placeholder={"MESSAJE"} />
+          <input type={"text"} placeholder={"NAME"} className="input" />
+          <input type={"text"} placeholder={"EMAIL"} className="input" />
+          <input type={"text"} placeholder={"SUBJECT"} className="input" />
+          <textarea type={"text"} placeholder={"MESSAJE"} className="input" />
           <Button
             name={"See More"}
             iconComponent={<RiMailSendLine size={"1.5em"} />}
