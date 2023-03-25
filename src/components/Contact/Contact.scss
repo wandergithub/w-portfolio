@@ -66,6 +66,26 @@
   padding: 11px 26px;
   transition: 0.3s;
 }
+
 .input:focus {
   border: 1px solid $primary-color;
+}
+
+form div {
+    display: flex;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form textarea {
+    height: 200px;
+}
+
+form button {
+    align-self: self-start;
 }

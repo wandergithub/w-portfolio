@@ -15,7 +15,7 @@ const Contact = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        margin: "0px 20px"
+        margin: "0px 20px",
       }}
     >
       <div
@@ -42,7 +42,9 @@ const Contact = () => {
             <FaMap size={"2em"} color="#ffb400" className="contact-icon" />
             <div>
               <h4 className="text-uppercase no-m title-3">address point</h4>
-              <p className="no-m">123 Stree New York City , United States Of America 750065.</p>
+              <p className="no-m">
+                123 Stree New York City , United States Of America 750065.
+              </p>
             </div>
           </div>
           <div>
@@ -98,10 +100,12 @@ const Contact = () => {
           </div>
         </div>
         <form>
-          <input type={"text"} placeholder={"NAME"} className="input" />
-          <input type={"text"} placeholder={"EMAIL"} className="input" />
+          <div>
+            <input type={"text"} placeholder={"NAME"} className="input" />
+            <input type={"text"} placeholder={"EMAIL"} className="input" />
+          </div>
           <input type={"text"} placeholder={"SUBJECT"} className="input" />
-          <textarea type={"text"} placeholder={"MESSAJE"} className="input" />
+          <textarea type={"text"} placeholder={"MESSAGE"} className="input" />
           <Button
             name={"SEND MESSAGE"}
             iconComponent={<RiMailSendLine size={"1.5em"} />}
