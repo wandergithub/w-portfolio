@@ -1,6 +1,10 @@
 @import "../shared/general";
 
 
+ul {
+    list-style: none;
+}
+
 @media screen and (max-width: 768px) {
     .bg-large {
         font-size: 40px;
