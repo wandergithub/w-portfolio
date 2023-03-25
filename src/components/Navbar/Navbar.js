@@ -35,7 +35,7 @@ const Navbar = ({ toggle }) => {
           </Link>
         ))}
       </div>
-      <div className="icons">
+      <div className="icons" style={{ paddingRight: "10px" }}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="github-icon icon-tabler icon-tabler-brand-github"
