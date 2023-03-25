@@ -27,7 +27,7 @@ const Contact = () => {
           Get in
           <span> Touch</span>
         </h1>
-        <span className="title-bg">Contact</span>
+        <span className="title-bg span-contact">Contact</span>
       </div>
 
       <div className="contact-info">
