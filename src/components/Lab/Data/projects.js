@@ -5,7 +5,7 @@ import image2 from "../../assets/img/blog-post-2.png";
 const projects = [
   {
     title: "Growth Mindset",
-    type: "Article",
+    type: "article",
     image: image1,
     description:
       "As a developer, having a growth mindset is crucial. It means embracing challenges, viewing obstacles as opportunities to learn and improve, and always striving to better ourselves.",
@@ -18,7 +18,7 @@ const projects = [
   },
   {
     title: "Recursion",
-    type: "Article",
+    type: "article",
     image: image2,
     description:
       "Recursion is a fundamental concept in computer science that can be intimidating for beginners. However, with a solid understanding of the basics and the right resources, it can become a powerful tool for solving complex problems.",
