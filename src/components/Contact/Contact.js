@@ -65,9 +65,9 @@ const Contact = () => {
       </div>
 
       <div className="contact-info">
-        <div className="text-p">
+        <div className="text-p m-3">
           <h2 className="text-uppercase title-2">Dont be shy!</h2>
-          <p>
+          <p style={{ maxWidth: "500px" }}>
             Feel free to get in touch with me. I am always open to discussing
             new projects, creative ideas or opportunities to be part of your
             visions.
@@ -75,9 +75,9 @@ const Contact = () => {
           <div>
             <FaMap size={"2em"} color="#ffb400" className="contact-icon" />
             <div>
-              <h4 className="text-uppercase no-m title-3">address point</h4>
+              <h4 className="text-uppercase no-m title-3">address</h4>
               <p className="no-m">
-                123 Stree New York City , United States Of America 750065.
+                Santo Domingo, Republica Dominicana.
               </p>
             </div>
           </div>
