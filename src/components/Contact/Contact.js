@@ -165,6 +165,7 @@ const Contact = () => {
             id="message"
             placeholder={"MESSAGE"}
             className="input"
+            required
           />
           <NotificationContainer />{" "}
           <Button

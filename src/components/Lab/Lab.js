@@ -38,6 +38,7 @@ const Lab = () => {
                 title={project.title}
                 description={project.description}
                 links={project.links}
+                type={project.type}
               />
             </li>
           );

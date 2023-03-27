@@ -1,11 +1,14 @@
 import "./ProjectCard.scss";
 
 const ProjectCard = (props) => {
-  const { image, title, description, links } = props;
+  const { image, title, description, links, type } = props;
 
   return (
     <div className="card">
       <div className="image">
+        <div class="one">
+          <h1>{type}</h1>
+        </div>
         <img src={image} />
       </div>
       <div className="details">
@@ -20,9 +23,7 @@ const ProjectCard = (props) => {
             {links.map((link) => {
               return (
                 <li>
-                  <a href={link.href}>
-                    {link.image}
-                  </a>
+                  <a href={link.href}>{link.image}</a>
                 </li>
               );
             })}
