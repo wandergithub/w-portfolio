@@ -6,14 +6,7 @@ import { FaArrowDown } from "react-icons/fa";
 
 const Lab = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "40px",
-      }}
-    >
+    <>
       <div
         className="title-section text-left text-sm-center aos-init aos-animate"
         data-aos="fade-up"
@@ -25,14 +18,13 @@ const Lab = () => {
         </h1>
         <span className="title-bg bg-large">Laboratory</span>
       </div>
-      <p className="text-p" style={{ maxWidth: "70%" }}>
+      <p className="text-p" style={{ maxWidth: "70%", alignSelf: "center" }}>
         ReactJS/Web Components, blogs, fun coding and everything else
         accomplished on my spare software development time.
       </p>
-      <ul className="project-container">
+      <div className="project-container">
         {projects.map((project) => {
           return (
-            <li>
               <ProjectCard
                 image={project.image}
                 title={project.title}
@@ -40,14 +32,13 @@ const Lab = () => {
                 links={project.links}
                 type={project.type}
               />
-            </li>
           );
         })}
-      </ul>
+      </div>
       <div style={{ alignSelf: "center", margin: "20px 0px" }}>
         <Button name={"See More"} iconComponent={<FaArrowDown />} />
       </div>
-    </div>
+    </>
   );
 };
 
