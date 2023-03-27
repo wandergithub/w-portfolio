@@ -6,25 +6,43 @@ import { SlCallIn } from "react-icons/sl";
 import { BsGithub } from "react-icons/bs";
 import { SiMedium } from "react-icons/si";
 import { GrInstagram, GrTwitter } from "react-icons/gr";
-import emailjs from '@emailjs/browser';
-import React, { useRef } from 'react';
+import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from "react";
 import "./Contact.scss";
+import {
+  NotificationContainer,
+  NotificationManager,
+} from "react-light-notifications";
+import "react-light-notifications/lib/main.css";
 
 const Contact = () => {
-
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_pwjxwun', 'contact_form', form.current, 'YHPP3TWppQs7wuTmZ')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    emailjs
+      .sendForm(
+        "service_pwjxwun",
+        "contact_form",
+        form.current,
+        "YHPP3TWppQs7wuTmZ"
+      )
+      .then(
+        (result) => {
+          NotificationManager.success({
+            title: "I received your email!",
+          });
+        },
+        (error) => {
+          NotificationManager.error({
+            title: "Something went wrong",
+            message: error.text,
+          });
+        }
+      );
   };
-  
+
   return (
     <div
       style={{
@@ -117,11 +135,38 @@ const Contact = () => {
         </div>
         <form ref={form} onSubmit={sendEmail}>
           <div>
-            <input type={"text"} name="name" id="name" placeholder={"NAME"} className="input" />
-            <input type={"email"} name="email" id="email" placeholder={"EMAIL"} className="input" />
+            <input
+              type={"text"}
+              name="name"
+              id="name"
+              placeholder={"NAME"}
+              className="input"
+              required
+            />
+            <input
+              type={"email"}
+              name="email"
+              id="email"
+              placeholder={"EMAIL"}
+              className="input"
+              required
+            />
           </div>
-          <input type={"text"} name="subject" id="subject" placeholder={"SUBJECT"} className="input" />
-          <textarea type={"text"} name="message" id="message" placeholder={"MESSAGE"} className="input" />
+          <input
+            type={"text"}
+            name="subject"
+            id="subject"
+            placeholder={"SUBJECT"}
+            className="input"
+          />
+          <textarea
+            type={"text"}
+            name="message"
+            id="message"
+            placeholder={"MESSAGE"}
+            className="input"
+          />
+          <NotificationContainer />{" "}
           <Button
             type={"submit"}
             name={"SEND MESSAGE"}
