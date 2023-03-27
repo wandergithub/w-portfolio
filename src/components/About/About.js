@@ -3,6 +3,7 @@ import "./About.scss";
 import me from "./assets/me.webp";
 import { FaArrowRight } from "react-icons/fa";
 import FloatingSocial from "../FloatingSocial/FloatingSocial";
+import { GrDocumentUser } from "react-icons/gr";
 
 const About = () => {
   return (
@@ -30,7 +31,13 @@ const About = () => {
             developed an interest in electronics and technology. In my free
             time, I enjoy reading and exercising.
           </p>
-          <Button name={"More about me"} iconComponent={<FaArrowRight />} />
+          <a href="https://docs.google.com/document/d/1WpT8wFZMX6YKyg4YN3l6hYIXNqSo1xpdtLb_zSInrt8/edit?usp=sharing" target={"_blank"} >
+            <Button
+              name={"Resume"}
+              type="button"
+              iconComponent={<GrDocumentUser />}
+            />
+          </a>
         </div>
       </div>
       <FloatingSocial />
