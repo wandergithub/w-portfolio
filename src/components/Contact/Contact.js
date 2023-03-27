@@ -6,9 +6,25 @@ import { SlCallIn } from "react-icons/sl";
 import { BsGithub } from "react-icons/bs";
 import { SiMedium } from "react-icons/si";
 import { GrInstagram, GrTwitter } from "react-icons/gr";
+import emailjs from '@emailjs/browser';
+import React, { useRef } from 'react';
 import "./Contact.scss";
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_pwjxwun', 'contact_form', form.current, 'YHPP3TWppQs7wuTmZ')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+  
   return (
     <div
       style={{
@@ -99,14 +115,15 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <div>
-            <input type={"text"} placeholder={"NAME"} className="input" />
-            <input type={"text"} placeholder={"EMAIL"} className="input" />
+            <input type={"text"} name="name" id="name" placeholder={"NAME"} className="input" />
+            <input type={"email"} name="email" id="email" placeholder={"EMAIL"} className="input" />
           </div>
-          <input type={"text"} placeholder={"SUBJECT"} className="input" />
-          <textarea type={"text"} placeholder={"MESSAGE"} className="input" />
+          <input type={"text"} name="subject" id="subject" placeholder={"SUBJECT"} className="input" />
+          <textarea type={"text"} name="message" id="message" placeholder={"MESSAGE"} className="input" />
           <Button
+            type={"submit"}
             name={"SEND MESSAGE"}
             iconComponent={<RiMailSendLine size={"1.5em"} />}
           />
