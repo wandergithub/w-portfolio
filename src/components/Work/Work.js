@@ -24,6 +24,7 @@ const Work = () => {
       <div className="project-container">
         {projects.slice(0, length).map((project) => (
           <ProjectCard
+            key={Math.random()}
             image={project.image}
             title={project.title}
             description={project.description}
