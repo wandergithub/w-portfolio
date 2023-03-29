@@ -1,12 +1,19 @@
 import './Work.scss';
 import { FaArrowDown } from 'react-icons/fa';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import ReactGA from 'react-ga';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import Button from '../shared/Button/Button';
 import projects from './Data/ProjectsList';
 
 const Work = () => {
   const [length, setLength] = useState(3);
+
+  // Google analytics
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+  // ----------------
   return (
     <>
       <div

@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import About from './components/About/About';
@@ -18,6 +19,12 @@ function App() {
   const toggle = () => {
     setisopen(!isopen);
   };
+
+  // Google analytics
+  ReactGA.initialize('G-NPEVDN4YKK');
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <>

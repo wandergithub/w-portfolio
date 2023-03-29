@@ -6,11 +6,18 @@ import { BsGithub } from 'react-icons/bs';
 import { SiMedium } from 'react-icons/si';
 import { GrInstagram, GrTwitter } from 'react-icons/gr';
 import emailjs from '@emailjs/browser';
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
+import ReactGA from 'react-ga';
 import Button from '../shared/Button/Button';
 import './Contact.scss';
 
 const Contact = () => {
+// Google analytics
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+  // ----------------
+
   const [notification, setNotification] = useState(false);
 
   const form = useRef();
