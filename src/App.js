@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
-import ReactGA from "react-ga";
-import Navbar from "./components/Navbar/Navbar";
-import Sidebar from "./components/Sidebar/Sidebar";
-import About from "./components/About/About";
-import Work from "./components/Work/Work";
-import Contact from "./components/Contact/Contact";
-import Lab from "./components/Lab/Lab";
+import React, { useEffect, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import ReactGA from 'react-ga';
+import Navbar from './components/Navbar/Navbar';
+import Sidebar from './components/Sidebar/Sidebar';
+import About from './components/About/About';
+import Work from './components/Work/Work';
+import Contact from './components/Contact/Contact';
+import Lab from './components/Lab/Lab';
 
 const style = {
   separator: {
-    height: "70px",
+    height: '70px',
   },
 };
 
@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
     // Google analytics
-    ReactGA.initialize("G-NPEVDN4YKK");
+    ReactGA.initialize('G-NPEVDN4YKK');
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
