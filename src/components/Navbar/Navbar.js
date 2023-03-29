@@ -2,9 +2,8 @@ import React from 'react';
 import './Navbar.scss';
 import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
-import navbarItems from '../shared/NavbarItems';
 import { PropTypes } from 'prop-types';
-
+import navbarItems from '../shared/NavbarItems';
 
 const Navbar = ({ toggle }) => (
   <nav>

@@ -1,4 +1,5 @@
 import './ProjectCard.scss';
+import { PropTypes } from 'prop-types';
 
 const ProjectCard = (props) => {
   const {
@@ -32,6 +33,22 @@ const ProjectCard = (props) => {
       </div>
     </div>
   );
+};
+
+ProjectCard.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  links: PropTypes.string,
+  type: PropTypes.string,
+};
+
+ProjectCard.defaultProps = {
+  image: '',
+  title: '',
+  description: '',
+  links: '',
+  type: 'Others',
 };
 
 export default ProjectCard;
