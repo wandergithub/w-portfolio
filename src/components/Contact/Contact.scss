@@ -17,7 +17,7 @@
 .contact-info div > div div {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 0;
 }
 
 .title-2 {
@@ -29,7 +29,7 @@
 }
 
 .no-m {
-  margin: 0px;
+  margin: 0;
 }
 
 .contact-icon {
@@ -64,7 +64,7 @@
   background: #252525;
   border: 1px solid #111;
   border-radius: 30px;
-  color: #000000;
+  color: #000;
   outline: none !important;
   padding: 11px 26px;
   transition: 0.3s;
@@ -138,12 +138,13 @@ form button {
   align-items: center;
   padding: 15px;
   border-radius: 5px;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
   border-style: solid;
 
   + .notification {
     margin-top: 15px;
   }
+
   &--error {
     background: #ffc0c0;
     border-color: #8c1a1a;

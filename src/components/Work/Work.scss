@@ -7,6 +7,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .title-section h1 span {
   color: $primary-color;
 }
@@ -47,8 +48,8 @@ body[data-aos-easing="ease"] [data-aos] {
 }
 
 *,
-:after,
-:before {
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -89,6 +90,7 @@ body[data-aos-easing="ease"] [data-aos] {
     align-items: center;
     gap: 30px;
   }
+
   .title-section {
     text-align: center;
   }

@@ -1,9 +1,9 @@
-import "./Work.scss";
-import ProjectCard from "../ProjectCard/ProjectCard";
-import Button from "../shared/Button/Button";
-import { FaArrowDown } from "react-icons/fa";
-import projects from "./Data/ProjectsList";
-import { useState } from "react";
+import './Work.scss';
+import { FaArrowDown } from 'react-icons/fa';
+import { useState } from 'react';
+import ProjectCard from '../ProjectCard/ProjectCard';
+import Button from '../shared/Button/Button';
+import projects from './Data/ProjectsList';
 
 const Work = () => {
   const [length, setLength] = useState(3);
@@ -22,20 +22,18 @@ const Work = () => {
       </div>
 
       <div className="project-container">
-        {projects.slice(0, length).map((project) => {
-          return (
-            <ProjectCard
-              image={project.image}
-              title={project.title}
-              description={project.description}
-              links={project.links}
-              type={project.type}
-            />
-          );
-        })}
+        {projects.slice(0, length).map((project) => (
+          <ProjectCard
+            image={project.image}
+            title={project.title}
+            description={project.description}
+            links={project.links}
+            type={project.type}
+          />
+        ))}
       </div>
-      <div style={{ alignSelf: "center", margin: "20px 0px" }} onClick={() => { setLength(length + 3) }}>
-        <Button name={"See More"} iconComponent={<FaArrowDown />} />
+      <div style={{ alignSelf: 'center', margin: '20px 0px' }}>
+        <Button type="button" name="See More" iconComponent={<FaArrowDown />} action={() => { setLength(length + 3); }} />
       </div>
     </>
   );

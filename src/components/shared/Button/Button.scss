@@ -43,12 +43,12 @@
   background-color: $primary-color;
 }
 
-.button:hover:before {
+.button:hover::before {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
 
-.button:before {
+.button::before {
   background-color: $primary-color;
   bottom: 0;
   content: "";

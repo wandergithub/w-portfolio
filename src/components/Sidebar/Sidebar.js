@@ -1,20 +1,20 @@
-import React from "react";
-import "./Sidebar.scss";
-import { FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import navbarItems from "../shared/NavbarItems";
+import React from 'react';
+import './Sidebar.scss';
+import { FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import navbarItems from '../shared/NavbarItems';
 
 const Sidebar = ({ isopen, toggle }) => {
-  let opacityClasses = ["sidebar-container"];
+  const opacityClasses = ['sidebar-container'];
   if (isopen) {
-    opacityClasses.push("opacity-on");
+    opacityClasses.push('opacity-on');
   } else {
-    opacityClasses.push("opacity-off");
+    opacityClasses.push('opacity-off');
   }
 
   return (
     <div
-      className={opacityClasses.join(" ")}
+      className={opacityClasses.join(' ')}
       isopen={isopen.toString()}
       onClick={toggle}
     >

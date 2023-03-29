@@ -1,15 +1,17 @@
-import "./ProjectCard.scss";
+import './ProjectCard.scss';
 
 const ProjectCard = (props) => {
-  const { image, title, description, links, type } = props;
+  const {
+    image, title, description, links, type,
+  } = props;
 
   return (
     <div className="card">
       <div className="image">
-        <div class="one">
+        <div className="one">
           <h1>{type}</h1>
         </div>
-        <img src={image} />
+        <img src={image} alt="" />
       </div>
       <div className="details">
         <div className="center">
@@ -20,13 +22,11 @@ const ProjectCard = (props) => {
           </h1>
           <p>{description}</p>
           <ul>
-            {links.map((link) => {
-              return (
-                <li>
-                  <a href={link.href}>{link.image}</a>
-                </li>
-              );
-            })}
+            {links.map((link) => (
+              <li>
+                <a href={link.href}>{link.image}</a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
