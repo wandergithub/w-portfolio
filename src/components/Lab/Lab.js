@@ -3,8 +3,10 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 import projects from "./Data/projects";
 import Button from "../shared/Button/Button";
 import { FaArrowDown } from "react-icons/fa";
+import { useState } from "react";
 
 const Lab = () => {
+  const [length, setLength] = useState(3);
   return (
     <>
       <div
@@ -23,7 +25,7 @@ const Lab = () => {
         accomplished on my spare software development time.
       </p>
       <div className="project-container">
-        {projects.map((project) => {
+        {projects.slice(0, length).map((project) => {
           return (
               <ProjectCard
                 image={project.image}
@@ -35,7 +37,7 @@ const Lab = () => {
           );
         })}
       </div>
-      <div style={{ alignSelf: "center", margin: "20px 0px" }}>
+      <div style={{ alignSelf: "center", margin: "20px 0px" }} onClick={() => { setLength(length + 3) }}>
         <Button name={"See More"} iconComponent={<FaArrowDown />} />
       </div>
     </>
