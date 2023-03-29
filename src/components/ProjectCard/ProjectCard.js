@@ -24,7 +24,7 @@ const ProjectCard = (props) => {
           <p>{description}</p>
           <ul>
             {links.map((link) => (
-              <li>
+              <li key={Math.random()}>
                 <a href={link.href}>{link.image}</a>
               </li>
             ))}
