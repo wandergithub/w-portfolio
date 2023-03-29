@@ -2,8 +2,8 @@ import React from 'react';
 import './Sidebar.scss';
 import { FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import navbarItems from '../shared/NavbarItems';
 import { PropTypes } from 'prop-types';
+import navbarItems from '../shared/NavbarItems';
 
 const Sidebar = ({ isopen, toggle }) => {
   const opacityClasses = ['sidebar-container'];
@@ -14,9 +14,9 @@ const Sidebar = ({ isopen, toggle }) => {
   }
 
   return (
-    <div
+    <button
+      type="button"
       className={opacityClasses.join(' ')}
-      isopen={isopen.toString()}
       onClick={toggle}
     >
       <div className="icon">
@@ -24,14 +24,14 @@ const Sidebar = ({ isopen, toggle }) => {
       </div>
       <div className="sidebar-wrapper">
         <div className="sidebar-menu">
-          {navbarItems.map((item, index) => (
-            <Link to={item.link} key={index} className="sidebar-links">
+          {navbarItems.map((item) => (
+            <Link to={item.link} key={Math.random()} className="sidebar-links">
               {item.title}
             </Link>
           ))}
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 
