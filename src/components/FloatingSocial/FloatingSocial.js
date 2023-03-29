@@ -1,7 +1,7 @@
 import "./FloatingSocial.scss";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
-import { SiMedium } from "react-icons/si";
+import { SiLeetcode, SiMedium } from "react-icons/si";
 import { GrInstagram, GrTwitter} from "react-icons/gr";
 
 const FloatingSocial = () => {
@@ -12,6 +12,9 @@ const FloatingSocial = () => {
       </a>
       <a href="https://github.com/wandergithub" target="_blank" style={{ backgroundColor: "#4e545a" }}>
         <BsGithub size={"2em"} color={"white"} />
+      </a>
+      <a href="https://leetcode.com/wandergithub/" target="_blank" style={{ backgroundColor: "#ffb400" }}>
+        <SiLeetcode size={"2em"} color={"black"} />
       </a>
       <a href="https://medium.com/@wandergonzalez0" target="_blank" style={{ backgroundColor: "black" }}>
         <SiMedium size={"2em"} color={"white"} />
