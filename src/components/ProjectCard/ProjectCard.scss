@@ -51,9 +51,16 @@
   transform: translateY(-50%);
 }
 
+/* === HEADING STYLE #1 === */
+.one h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  color: $basic-color;
+}
+
 .card .details .center h1 {
   font-family: $font-1;
-  font-size: $title-1;
   margin: 0;
   padding: 0;
   color: $primary-color;
@@ -96,7 +103,6 @@
   line-height: 30px;
   text-align: center;
   padding-top: 7px;
-  transform: 0.5s;
 }
 
 .card .details .center ul li a:hover {
@@ -105,15 +111,7 @@
   color: $basic-color;
 }
 
-
 /* === HEADING STYLE #1 === */
-.one h1 {
-  text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 5px;
-  color: $basic-color;
-}
-
 .one h1::before {
   width: 28px;
   height: 5px;

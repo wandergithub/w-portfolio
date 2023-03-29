@@ -5,7 +5,6 @@
   background-color: transparent;
   border-radius: 35px;
   color: #fff;
-  cursor: pointer;
   cursor: pointer !important;
   display: inline-block;
   font-size: 15px;
@@ -43,11 +42,6 @@
   background-color: $primary-color;
 }
 
-.button:hover::before {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
-
 .button::before {
   background-color: $primary-color;
   bottom: 0;
@@ -60,4 +54,9 @@
   transform: translateX(100%);
   transition: all 0.3s ease-out;
   z-index: -1;
+}
+
+.button:hover::before {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }

@@ -8,6 +8,11 @@
   justify-content: center;
 }
 
+form div {
+  display: flex;
+  gap: 10px;
+}
+
 .contact-info div > div {
   display: flex;
   gap: 20px;
@@ -72,11 +77,6 @@
 
 .input:focus {
   border: 1px solid $primary-color;
-}
-
-form div {
-  display: flex;
-  gap: 10px;
 }
 
 .m-3 {
