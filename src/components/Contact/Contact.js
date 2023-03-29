@@ -7,15 +7,13 @@ import { BsGithub } from "react-icons/bs";
 import { SiMedium } from "react-icons/si";
 import { GrInstagram, GrTwitter } from "react-icons/gr";
 import emailjs from "@emailjs/browser";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import "./Contact.scss";
-import {
-  NotificationContainer,
-  NotificationManager,
-} from "react-light-notifications";
-import "react-light-notifications/lib/main.css";
+import { useState } from "react";
 
 const Contact = () => {
+  const [notification, setNotification] = useState(false);
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -30,15 +28,22 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          NotificationManager.success({
-            title: "I received your email!",
-          });
+          setNotification(
+            <div class="notification notification--success u-mg-b--sm">
+              <div class="notification__content-block">
+                <p class="notification__par">Message Received!</p>
+              </div>
+            </div>
+          );
         },
         (error) => {
-          NotificationManager.error({
-            title: "Something went wrong",
-            message: error.text,
-          });
+          setNotification(
+            <div class="notification notification--error u-mg-b--sm">
+              <div class="notification__content-block">
+                <p class="notification__par">Something went wrong!</p>
+              </div>
+            </div>
+          );
         }
       );
   };
@@ -76,9 +81,7 @@ const Contact = () => {
             <FaMap size={"2em"} color="#ffb400" className="contact-icon" />
             <div>
               <h4 className="text-uppercase no-m title-3">address</h4>
-              <p className="no-m">
-                Santo Domingo, Republica Dominicana.
-              </p>
+              <p className="no-m">Santo Domingo, Republica Dominicana.</p>
             </div>
           </div>
           <div>
@@ -167,7 +170,7 @@ const Contact = () => {
             className="input"
             required
           />
-          <NotificationContainer />{" "}
+          {notification}
           <Button
             type={"submit"}
             name={"SEND MESSAGE"}

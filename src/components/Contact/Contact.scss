@@ -111,3 +111,67 @@ form button {
     flex-direction: column;
   }
 }
+
+// Notification
+
+.u-mg-b--sm {
+  margin-bottom: 10px;
+}
+
+.page-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.display-wrapper {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 25px;
+  border: 1px solid #fefefe;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.notification {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+
+  + .notification {
+    margin-top: 15px;
+  }
+  &--error {
+    background: #ffc0c0;
+    border-color: #8c1a1a;
+    color: #8c1a1a;
+  }
+
+  &--success {
+    background: #e1ffdf;
+    border-color: #2c4a2c;
+    color: #2c4a2c;
+  }
+}
+
+.notification__icon-block {
+  margin-right: 15px;
+}
+
+.notification__content-block {
+  margin-right: 50px;
+}
+
+.notification__par {
+  margin: 0;
+}
+
+.notification__close-link {
+  position: absolute;
+  right: 0;
+  padding: 0 15px;
+  color: #4c83ff;
+}
