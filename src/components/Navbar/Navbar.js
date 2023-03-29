@@ -3,6 +3,8 @@ import './Navbar.scss';
 import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import navbarItems from '../shared/NavbarItems';
+import { PropTypes } from 'prop-types';
+
 
 const Navbar = ({ toggle }) => (
   <nav>
@@ -28,8 +30,8 @@ const Navbar = ({ toggle }) => (
       Wander Gonzalez
     </Link>
     <div className="menu-items">
-      {navbarItems.map((item, index) => (
-        <Link className="link" to={item.link} key={index}>
+      {navbarItems.map((item) => (
+        <Link className="link" to={item.link} key={Math.random()}>
           {item.title}
         </Link>
       ))}
@@ -56,5 +58,13 @@ const Navbar = ({ toggle }) => (
     </div>
   </nav>
 );
+
+Navbar.propTypes = {
+  toggle: PropTypes.bool,
+};
+
+Navbar.defaultProps = {
+  toggle: false,
+};
 
 export default Navbar;
