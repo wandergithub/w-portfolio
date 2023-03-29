@@ -3,6 +3,7 @@ import './Sidebar.scss';
 import { FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import navbarItems from '../shared/NavbarItems';
+import { PropTypes } from 'prop-types';
 
 const Sidebar = ({ isopen, toggle }) => {
   const opacityClasses = ['sidebar-container'];
@@ -32,6 +33,16 @@ const Sidebar = ({ isopen, toggle }) => {
       </div>
     </div>
   );
+};
+
+Sidebar.propTypes = {
+  toggle: PropTypes.bool,
+  isopen: PropTypes.bool,
+};
+
+Sidebar.defaultProps = {
+  toggle: false,
+  isopen: false,
 };
 
 export default Sidebar;
