@@ -70,6 +70,7 @@ body[data-aos-easing="ease"] [data-aos] {
 .project-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 576px) {
