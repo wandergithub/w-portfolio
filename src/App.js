@@ -36,7 +36,7 @@ function App() {
       <SwitchTransition>
         <CSSTransition
           key={location.key}
-          timeout={1000}
+          timeout={500}
           classNames="right-to-left"
           unmountOnExit
         >

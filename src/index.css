@@ -42,7 +42,7 @@ body {
 }
 .right-to-left-enter-active {
   transform: translateX(0);
-  transition:all 1s ease;
+  transition:all .5s ease;
 }      
 
 .right-to-left-exit {
@@ -50,7 +50,7 @@ body {
 }
 .right-to-left-exit-active {
   transform: translateX(-100%);
-  transition:all 1s ease;
+  transition:all .5s ease;
 }      
 
 .left-to-right-enter {
@@ -58,7 +58,7 @@ body {
 }
 .left-to-right-enter-active {
   transform: translateX(0);
-  transition:all 1s ease;
+  transition:all .5s ease;
 }      
 
 .left-to-right-exit {
@@ -66,5 +66,22 @@ body {
 }
 .left-to-right-exit-active {
   transform: translateX(100%);
-  transition:all 1s ease;
+  transition:all .5s ease;
+}   
+
+/* slide up */
+.slide-up-enter {
+  transform: translateY(100%);
+}
+.slide-up-enter-active {
+  transform: translateY(0);
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}      
+
+.slide-up-exit {
+  transform: translateY(0);
+}
+.slide-up-exit-active {
+  transform: translateY(-100%);
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }   
