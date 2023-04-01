@@ -23,7 +23,6 @@ function App() {
   useEffect(() => {
     // Google analytics
     ReactGA.initialize('G-6P2G9HJ87C');
-    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
   return (
