@@ -15,7 +15,13 @@ const Work = () => {
   }, []);
   // ----------------
   return (
-    <div>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: '40px',
+    }}
+    >
       <div
         className="title-section text-left text-sm-center aos-init aos-animate"
         data-aos="fade-up"
