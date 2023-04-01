@@ -15,7 +15,7 @@ const Work = () => {
   }, []);
   // ----------------
   return (
-    <>
+    <div>
       <div
         className="title-section text-left text-sm-center aos-init aos-animate"
         data-aos="fade-up"
@@ -43,7 +43,7 @@ const Work = () => {
       <div style={{ alignSelf: 'center', margin: '20px 0px' }}>
         <Button type="button" name="See More" iconComponent={<FaArrowDown />} action={() => { setLength(length + 3); }} />
       </div>
-    </>
+    </div>
   );
 };
 

@@ -16,7 +16,7 @@ const Lab = () => {
   // ----------------
 
   return (
-    <>
+    <div>
       <div
         className="title-section text-left text-sm-center aos-init aos-animate"
         data-aos="fade-up"
@@ -56,7 +56,7 @@ const Lab = () => {
           }}
         />
       </div>
-    </>
+    </div>
   );
 };
 

@@ -36,8 +36,9 @@ function App() {
       <SwitchTransition>
         <CSSTransition
           key={location.key}
-          timeout={500}
-          classNames="fade"
+          timeout={1000}
+          classNames="right-to-left"
+          unmountOnExit
         >
           <Routes location={location}>
             <Route path="/" element={<About />} />
