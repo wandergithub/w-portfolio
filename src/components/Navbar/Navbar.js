@@ -72,7 +72,7 @@ const Navbar = ({ toggle }) => {
 };
 
 Navbar.propTypes = {
-  toggle: PropTypes.bool,
+  toggle: PropTypes.func,
 };
 
 Navbar.defaultProps = {

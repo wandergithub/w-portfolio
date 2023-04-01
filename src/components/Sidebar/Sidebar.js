@@ -36,7 +36,7 @@ const Sidebar = ({ isopen, toggle }) => {
 };
 
 Sidebar.propTypes = {
-  toggle: PropTypes.bool,
+  toggle: PropTypes.func,
   isopen: PropTypes.bool,
 };
 

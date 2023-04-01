@@ -39,7 +39,7 @@ ProjectCard.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
-  links: PropTypes.string,
+  links: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),
   type: PropTypes.string,
 };
 
