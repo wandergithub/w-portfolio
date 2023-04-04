@@ -1,71 +1,83 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0831279d-468b-4bdb-bc1a-32deecee4d53/deploy-status)](https://app.netlify.com/sites/wander-portfolio/deploys)
 
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my personal portfolio website made to showcase my work and experience. Made from scratch with different simple design inspirations. 
 
-## Available Scripts
+## Built With
 
-In the project directory, you can run:
+- [React js]()
+<!-- - [Redux](https://redux.js.org/) -->
+<!-- - [Material UI/MUI](https://mui.com) -->
+<!-- - [Jest](https://jestjs.io/) -->
+<!-- - [React Testing library](https://testing-library.com/docs/react-testing-library/intro/) -->
+<!-- - [GitHub CI workflows](https://github.com/wandergithub/e-commerce/actions) -->
+  <!-- - Automated deployment -->
+  <!-- - Automated testing -->
+  <!-- - Automated linters -->
+<!-- - [Platzi Fake store API](https://fakeapi.platzi.com/doc/categories#get-all-categories) -->
 
-### `npm start`
+- Mobile first design
+- Responsive web design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## App screenshots
 
-### `npm test`
+<img src="appscreenshots/screen1.jpeg" />
+<img src="./appscreenshots/screen2.jpeg" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live Demo
 
-### `npm run build`
+[Live Demo Link](https://wander-portfolio.netlify.app/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage <img src="https://img.icons8.com/external-filled-outline-geotatah/344/external-engine-merger-and-acquisition-filled-outline-filled-outline-geotatah.png" alt="Bootstrap Icon" style="width: 50px; height: 50px">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Be sure to have [Node.js](https://nodejs.org/) installed before proceeding.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```shell
+# Clone the repo
+git clone https://github.com/wandergithub/w-portfolio.git
+# Change directory
+cd w-portfolio
+# Install dependencies
+npm install
+# Start local server
+npm start
+```
 
-### `npm run eject`
+<!-- ### Run tests -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Author 👤
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[![Github Badge](https://img.shields.io/badge/@wandergithub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/wandergithub)&nbsp;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[![Twitter Badge](https://img.shields.io/badge/-@wanderklk1_-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/wanderklk1)](https://twitter.com/wanderklk1)&nbsp;
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[![Linkedin Badge](https://img.shields.io/badge/-Wander%20Gonzalez%20Martinez-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/wander-gonzalez/)](https://www.linkedin.com/in/wander-gonzalez/)&nbsp;
 
-## Learn More
+## 🛠️ Future features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Update with an animated 3d background
+- Add Open Source contrib section
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
 
-### Code Splitting
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Feel free to check the [issues page](../../issues/).
 
-### Analyzing the Bundle Size
+### You are welcome to collaborate on this projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. [Budget App](https://github.com/wandergithub/budget-app)
 
-### Making a Progressive Web App
+2. [Traveler's Hub](https://github.com/wandergithub/travelers-hub)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. [Recipe App](https://github.com/wandergithub/Recipe-app)
 
-### Advanced Configuration
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Give a ⭐️ if you like this project!
 
-### Deployment
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.
