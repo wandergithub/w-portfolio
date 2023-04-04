@@ -77,6 +77,23 @@ const projects = [
       },
     ],
   },
+  {
+    title: 'Portfolio',
+    type: 'frontend',
+    image: 'https://github.com/wandergithub/w-portfolio/blob/main/appscreenshots/screen1.jpeg?raw=true',
+    description:
+      'This is my personal portfolio website made to showcase my work and experience. Made from scratch with different simple design inspirations.',
+    links: [
+      {
+        image: <TbBrandGithub title="Github icon" size="2em" />,
+        href: 'https://github.com/wandergithub/w-portfolio',
+      },
+      {
+        image: <GoBrowser title="Live demo icon" size="2em" />,
+        href: 'https://wander-portfolio.netlify.app/',
+      },
+    ],
+  },
 ];
 
 export default projects;
