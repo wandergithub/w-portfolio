@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Navbar.scss';
 import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { PropTypes } from 'prop-types';
 import navbarItems from '../shared/NavbarItems';
 
-const Navbar = ({ toggle }) => {
-  const [active, setActive] = useState('/');
+const Navbar = (props) => {
+  const { currentPath, setCurrentPath, toggle } = props;
 
   return (
     <nav>
       <Link
         to="/"
-        className={`${'link'} ${active === '/' ? 'link-active' : ''}`}
-        onClick={() => setActive('/')}
+        className={`${'link'} ${currentPath === '/' ? 'link-active' : ''}`}
+        onClick={() => setCurrentPath('/')}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -38,10 +38,10 @@ const Navbar = ({ toggle }) => {
       <div className="menu-items">
         {navbarItems.map((item) => (
           <Link
-            className={`${'link'} ${active === item.link ? 'link-active' : ''}`}
+            className={`${'link'} ${currentPath === item.link ? 'link-active' : ''}`}
             to={item.link}
             key={Math.random()}
-            onClick={() => setActive(item.link)}
+            onClick={() => setCurrentPath(item.link)}
           >
             {item.title}
           </Link>
@@ -75,6 +75,8 @@ const Navbar = ({ toggle }) => {
 
 Navbar.propTypes = {
   toggle: PropTypes.func,
+  setCurrentPath: PropTypes.func.isRequired,
+  currentPath: PropTypes.string.isRequired,
 };
 
 Navbar.defaultProps = {

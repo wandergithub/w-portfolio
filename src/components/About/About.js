@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 import { GrDocumentUser } from 'react-icons/gr';
 import ReactGA from 'react-ga';
 import { useEffect } from 'react';
+import { PropTypes } from 'prop-types';
 import me from './assets/me.webp';
 import FloatingSocial from '../FloatingSocial/FloatingSocial';
 import Button from '../shared/Button/Button';
 
-const About = () => {
-  // Google analytics
+const About = ({ setCurrentPath }) => {
   useEffect(() => {
+    // Google analytics
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
-  // ----------------
 
   return (
     <div
@@ -43,6 +43,7 @@ const About = () => {
             <Link
               to="/contact"
               style={{ textDecoration: 'none', color: '#ffb400' }}
+              onClick={() => { setCurrentPath('/contact'); }}
             >
               {' '}
               contact me!
@@ -64,6 +65,10 @@ const About = () => {
       <FloatingSocial />
     </div>
   );
+};
+
+About.propTypes = {
+  setCurrentPath: PropTypes.func.isRequired,
 };
 
 export default About;
