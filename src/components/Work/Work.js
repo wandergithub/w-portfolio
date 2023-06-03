@@ -2,9 +2,11 @@ import './Work.scss';
 import { FaArrowDown } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import ReactGA from 'react-ga';
+import { ToastContainer, toast } from 'react-toastify';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import Button from '../shared/Button/Button';
 import projects from './Data/ProjectsList';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Work = () => {
   const [length, setLength] = useState(3);
@@ -13,7 +15,26 @@ const Work = () => {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
-  // ----------------
+
+  const noMoreItems = () => (toast.warn('No more projects! \n', {
+    position: 'bottom-left',
+    autoClose: 4000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: 'dark',
+  }));
+
+  function showMoreItems(currentNumber) {
+    if (currentNumber < projects.length) {
+      setLength(length + 1);
+    } else {
+      noMoreItems();
+    }
+  }
+
   return (
     <div style={{
       display: 'flex',
@@ -47,7 +68,19 @@ const Work = () => {
         ))}
       </div>
       <div style={{ alignSelf: 'center', margin: '20px 0px' }}>
-        <Button type="button" name="See More" iconComponent={<FaArrowDown />} action={() => { setLength(length + 3); }} />
+        <Button type="button" name="See More" iconComponent={<FaArrowDown />} action={() => { showMoreItems(length); }} />
+        <ToastContainer
+          position="bottom-left"
+          autoClose={4000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
       </div>
     </div>
   );
