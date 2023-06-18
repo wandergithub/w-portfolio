@@ -33,6 +33,7 @@ function App() {
     <>
       <Navbar toggle={toggle} setCurrentPath={setCurrentPath} currentPath={currentPath} />
       <Sidebar isopen={isopen} toggle={toggle} />
+      <div className="bg-image" />
       <div style={style.separator} />
       <SwitchTransition>
         <CSSTransition

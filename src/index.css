@@ -85,3 +85,23 @@ body {
   transform: translateY(-100%);
   transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }   
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://images.pexels.com/photos/750225/pexels-photo-750225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+  /* Add the blur effect */
+  filter: blur(12px);
+  -webkit-filter: blur(12px);
+
+  /* Full height */
+  height: 100%;
+  z-index: -1212;
+  position: fixed;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
