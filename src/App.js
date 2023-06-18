@@ -10,12 +10,6 @@ import Contact from './components/Contact/Contact';
 import Lab from './components/Lab/Lab';
 import './index.css';
 
-const style = {
-  separator: {
-    height: '70px',
-  },
-};
-
 function App() {
   const location = useLocation();
   const [isopen, setisopen] = useState(false);
@@ -34,7 +28,6 @@ function App() {
       <Navbar toggle={toggle} setCurrentPath={setCurrentPath} currentPath={currentPath} />
       <Sidebar isopen={isopen} toggle={toggle} />
       <div className="bg-image" />
-      <div style={style.separator} />
       <SwitchTransition>
         <CSSTransition
           key={location.key}
