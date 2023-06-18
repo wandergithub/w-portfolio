@@ -39,7 +39,8 @@ const About = ({ setCurrentPath }) => {
             further. I am used to facing difficult problems and new challenges
             every day. I love technology and computer science. I am disciplined
             in my work, as I am in exercising and developing mentally and
-            fiscally every day. If you want to work together, feel free to
+            fiscally every day. If you want to have the best team of engineers,
+            why are you waiting to contact me
             <Link
               to="/contact"
               style={{ textDecoration: 'none', color: '#ffb400' }}

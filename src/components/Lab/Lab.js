@@ -54,7 +54,7 @@ const Lab = () => {
         <span className="title-bg bg-large">Laboratory</span>
       </div>
       <p className="text-p" style={{ maxWidth: '70%', alignSelf: 'center' }}>
-        ReactJS/Web Components, blogs, fun coding and everything else
+        Front-End Components, blogs, fun coding and everything else
         accomplished on my spare software development time.
       </p>
       <div className="project-container">
