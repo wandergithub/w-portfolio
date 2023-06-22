@@ -45,9 +45,15 @@ nav {
   margin-right: 5px;
 }
 
-.github-icon {
-  color: white;
+.github-icon  svg {
+  height: 46px;
+  width: 32px;
 }
+
+.github-icon {
+  background-color: rgba(0, 0, 0, 0) ;
+}
+
 
 .menu-items {
   display: flex;
