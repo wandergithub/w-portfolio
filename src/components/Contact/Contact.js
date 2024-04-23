@@ -3,8 +3,6 @@ import { FaMap, FaLinkedinIn } from 'react-icons/fa';
 import { GoMailRead } from 'react-icons/go';
 import { SlCallIn } from 'react-icons/sl';
 import { BsGithub } from 'react-icons/bs';
-import { SiMedium } from 'react-icons/si';
-import { GrInstagram, GrTwitter } from 'react-icons/gr';
 import emailjs from '@emailjs/browser';
 import React, { useRef, useState, useEffect } from 'react';
 import ReactGA from 'react-ga';
@@ -104,7 +102,7 @@ const Contact = () => {
             <SlCallIn size="2em" color="#ffb400" className="contact-icon" />
             <div>
               <h4 className="text-uppercase no-m title-3">call me</h4>
-              <p className="no-m">+1 849 631 6566</p>
+              <p className="no-m">+1 223 246 0651</p>
             </div>
           </div>
           <div>
@@ -123,30 +121,6 @@ const Contact = () => {
               rel="noreferrer"
             >
               <BsGithub size="1.3em" color="white" />
-            </a>
-            <a
-              href="https://medium.com/@wandergonzalez0"
-              target="_blank"
-              className="contact-icons"
-              rel="noreferrer"
-            >
-              <SiMedium size="1.3em" color="white" />
-            </a>
-            <a
-              href="https://www.instagram.com/wander_acg/"
-              target="_blank"
-              className="contact-icons"
-              rel="noreferrer"
-            >
-              <GrInstagram size="1.3em" color="white" />
-            </a>
-            <a
-              href="https://twitter.com/wanderklk1"
-              target="_blank"
-              className="contact-icons"
-              rel="noreferrer"
-            >
-              <GrTwitter size="1.3em" color="white" />
             </a>
           </div>
         </div>

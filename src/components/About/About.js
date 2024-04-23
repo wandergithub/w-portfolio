@@ -29,25 +29,38 @@ const About = ({ setCurrentPath }) => {
         </div>
         <div className="about-content">
           <h1 className="title-1 text-uppercase">
-            i&apos;m Wander gonzalez.
+            Wander gonzalez
             <br />
-            <span>Web Developer</span>
+            <span>Software Engineer</span>
           </h1>
           <p className="text-p">
-            I am a full-stack web developer. I am an expert in persisting
-            towards my objectives and doing what&apos;s needed to go a step
-            further. I am used to facing difficult problems and new challenges
-            every day. I love technology and computer science. I am disciplined
-            in my work, as I am in exercising and developing mentally and
-            fiscally every day. If you want to have the best team of engineers,
-            why are you waiting to contact me
+            <b>Driven</b>
+            {' '}
+            by an insatiable
+            {' '}
+            <b>curiosity</b>
+            , I navigate the
+            complexities of
+            {' '}
+            <b>problem-solving</b>
+            {' '}
+            with
+            a blend of
+            {' '}
+            <b>critical thinking</b>
+            {' '}
+            and relentless
+            {' '}
+            <b>hard work</b>
+            .
+            <br />
             <Link
               to="/contact"
               style={{ textDecoration: 'none', color: '#ffb400' }}
               onClick={() => { setCurrentPath('/contact'); }}
             >
               {' '}
-              contact me!
+              Get in touch!
             </Link>
           </p>
           <a

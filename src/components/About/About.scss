@@ -1,4 +1,7 @@
 @import "../shared/general.scss";
+b {
+  color: rgb(255, 205, 88);
+}
 
 .about {
   display: flex;
@@ -44,7 +47,7 @@
 }
 
 .about-content {
-  max-width: 40.3333%;
+  max-width: 44%;
 }
 
 @media screen and (max-width: 768px) {
