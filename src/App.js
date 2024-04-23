@@ -1,4 +1,3 @@
-import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import React, { useEffect, useState } from 'react';
 import { Route, useLocation, Routes } from 'react-router-dom';
 import ReactGA from 'react-ga';
@@ -28,21 +27,12 @@ function App() {
       <Navbar toggle={toggle} setCurrentPath={setCurrentPath} currentPath={currentPath} />
       <Sidebar isopen={isopen} toggle={toggle} />
       <div className="bg-image" />
-      <SwitchTransition>
-        <CSSTransition
-          key={location.key}
-          timeout={500}
-          classNames="right-to-left"
-          unmountOnExit
-        >
-          <Routes location={location}>
-            <Route path="/" element={<About setCurrentPath={setCurrentPath} />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/lab" element={<Lab />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </CSSTransition>
-      </SwitchTransition>
+      <Routes location={location}>
+        <Route path="/" element={<About setCurrentPath={setCurrentPath} />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/lab" element={<Lab />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </>
   );
 }
