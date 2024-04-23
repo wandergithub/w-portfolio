@@ -4,7 +4,7 @@ import { GrDocumentUser } from 'react-icons/gr';
 import ReactGA from 'react-ga';
 import { useEffect } from 'react';
 import { PropTypes } from 'prop-types';
-import me from './assets/me.webp';
+import me from './assets/me2.png';
 import FloatingSocial from '../FloatingSocial/FloatingSocial';
 import Button from '../shared/Button/Button';
 
