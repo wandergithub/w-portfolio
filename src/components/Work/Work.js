@@ -1,6 +1,8 @@
 import './Work.scss';
 import { useEffect } from 'react';
 import ReactGA from 'react-ga';
+import { CgExternal } from 'react-icons/cg';
+import projects from './Data/ProjectsList';
 
 const Work = () => {
   // Google analytics
@@ -29,44 +31,51 @@ const Work = () => {
       </div>
       <h2 className="project__subtitle">Experience</h2>
       <div className="project-container">
-        <li className="project__item">
-          <a href="httpe://Torre.ai" className="project_link" target="__blank">
-            <header>
-              <p>
-                2024 -- present
-              </p>
-            </header>
-            <div className="project_link_content">
-              <h3 className="">
-                <div>
-                  <span className="" />
-                  <span>
-                    Senior Frontend Engineer, Accessibility
-                    <span className="">
-                      Klaviyo
-                      <span>link icon here</span>
+        {projects.map((item) => (
+          <li className="project__item" key={item}>
+            <a href="httpe://Torre.ai" className="project_link" target="__blank">
+              <header>
+                <p>
+                  {item.from}
+                  {' '}
+                  ─
+                  {' '}
+                  {item.to}
+                </p>
+              </header>
+              <div className="project_link_content">
+                <h3>
+                  <div>
+                    <span />
+                    <span>
+                      {item.title}
+                      ,
+                      {' '}
+                      <span>
+                        {item.company}
+                        {' '}
+                        <span className="shareIcon">
+                          <CgExternal />
+                        </span>
+                      </span>
                     </span>
-                  </span>
-                </div>
-              </h3>
+                  </div>
+                </h3>
 
-              <p>
-                Build and maintain critical components used to construct Klaviyo’s frontend,
-                across the whole product. Work closely with cross-functional teams,
-                including developers,
-                designers, and product managers,
-                to implement and advocate for best practices in web accessibility.
-              </p>
+                <p>
+                  {item.description}
+                </p>
 
-              <ul className="" aria-label="Technologies used">
-                <li className=""><div className="">JavaScript</div></li>
-                <li className=""><div className="">TypeScript</div></li>
-                <li className=""><div className="">React</div></li>
-                <li className=""><div className="">Storybook</div></li>
-              </ul>
-            </div>
-          </a>
-        </li>
+                <ul aria-label="Technologies used">
+                  {item.tech.map((tool) => (
+                    <li key={tool}><div>{tool}</div></li>
+                  ))}
+                </ul>
+              </div>
+            </a>
+          </li>
+        ))}
+
       </div>
     </div>
   );
