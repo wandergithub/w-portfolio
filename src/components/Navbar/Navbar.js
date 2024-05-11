@@ -2,7 +2,6 @@ import React from 'react';
 import './Navbar.scss';
 import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
-import { BsGithub } from 'react-icons/bs';
 import { PropTypes } from 'prop-types';
 import navbarItems from '../shared/NavbarItems';
 
@@ -49,14 +48,6 @@ const Navbar = (props) => {
         ))}
       </div>
       <div className="icons" style={{ paddingRight: '10px' }}>
-        <a
-          href="https://github.com/wandergithub"
-          target="_blank"
-          className="contact-icons github-icon"
-          rel="noreferrer"
-        >
-          <BsGithub size="1.3em" color="white" />
-        </a>
         <div className="mobile-menu-icon">
           <FaBars onClick={toggle} />
         </div>
