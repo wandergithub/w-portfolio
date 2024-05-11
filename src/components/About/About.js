@@ -4,10 +4,10 @@ import { GrDocumentUser } from 'react-icons/gr';
 import ReactGA from 'react-ga';
 import { useEffect } from 'react';
 import { PropTypes } from 'prop-types';
-import me from './assets/me2.png';
+import me from './assets/me.webp';
 import FloatingSocial from '../FloatingSocial/FloatingSocial';
 import Button from '../shared/Button/Button';
-import myPdf from './resume.pdf';
+import myPdf from './assets/resume.pdf';
 
 const About = ({ setCurrentPath }) => {
   useEffect(() => {
