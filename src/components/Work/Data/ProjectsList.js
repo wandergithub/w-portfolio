@@ -5,8 +5,7 @@ const projects = [
     from: 'Apr 2023',
     to: 'Dec 2023',
     description: `- Enhanced, updated, tested, documented, and wrote platform components package.
-    - Major high-scale component package refactor under tech lead supervision reducing code duplication, increasing components usability, documenting, and testing.
-    - Had a major role in the addition of the Storybooks components documentation tool.
+    - Major high-scale component package refactoring reducing code duplication, increasing components performance, usability, documenting, and testing.    - Had a major role in the addition of the Storybooks components documentation tool.
     - Migrated components from JS to TS.
     - 100+ cards successfully closed on reported bugs in less than a year.
     - Contribute to multiple microservices in a variety of programming tools.
