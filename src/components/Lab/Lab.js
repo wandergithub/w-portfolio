@@ -2,7 +2,7 @@ import './Lab.scss';
 import { FaArrowDown } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import ReactGA from 'react-ga';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import projects from './Data/projects';
 import Button from '../shared/Button/Button';
@@ -15,22 +15,9 @@ const Lab = () => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
-  const noMoreItems = () => (toast.warn('No more projects! \n', {
-    position: 'bottom-left',
-    autoClose: 4000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: 'dark',
-  }));
-
   function showMoreItems(currentNumber) {
     if (currentNumber < projects.length) {
       setLength(length + 1);
-    } else {
-      noMoreItems();
     }
   }
 

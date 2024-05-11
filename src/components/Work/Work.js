@@ -1,39 +1,12 @@
 import './Work.scss';
-import { FaArrowDown } from 'react-icons/fa';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import ReactGA from 'react-ga';
-import { ToastContainer, toast } from 'react-toastify';
-import ProjectCard from '../ProjectCard/ProjectCard';
-import Button from '../shared/Button/Button';
-import projects from './Data/ProjectsList';
-import 'react-toastify/dist/ReactToastify.css';
 
 const Work = () => {
-  const [length, setLength] = useState(3);
-
   // Google analytics
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
-
-  const noMoreItems = () => (toast.warn('No more projects! \n', {
-    position: 'bottom-left',
-    autoClose: 4000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: 'dark',
-  }));
-
-  function showMoreItems(currentNumber) {
-    if (currentNumber < projects.length) {
-      setLength(length + 1);
-    } else {
-      noMoreItems();
-    }
-  }
 
   return (
     <div style={{
@@ -54,33 +27,46 @@ const Work = () => {
         </h1>
         <span className="title-bg">works</span>
       </div>
-
+      <h2 className="project__subtitle">Experience</h2>
       <div className="project-container">
-        {projects.slice(0, length).map((project) => (
-          <ProjectCard
-            key={Math.random()}
-            image={project.image}
-            title={project.title}
-            description={project.description}
-            links={project.links}
-            type={project.type}
-          />
-        ))}
-      </div>
-      <div style={{ alignSelf: 'center', margin: '20px 0px' }}>
-        <Button type="button" name="See More" iconComponent={<FaArrowDown />} action={() => { showMoreItems(length); }} />
-        <ToastContainer
-          position="bottom-left"
-          autoClose={4000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="dark"
-        />
+        <li className="project__item">
+          <a href="httpe://Torre.ai" className="project_link" target="__blank">
+            <header>
+              <p>
+                2024 -- present
+              </p>
+            </header>
+            <div className="project_link_content">
+              <h3 className="">
+                <div>
+                  <span className="" />
+                  <span>
+                    Senior Frontend Engineer, Accessibility
+                    <span className="">
+                      Klaviyo
+                      <span>link icon here</span>
+                    </span>
+                  </span>
+                </div>
+              </h3>
+
+              <p>
+                Build and maintain critical components used to construct Klaviyo’s frontend,
+                across the whole product. Work closely with cross-functional teams,
+                including developers,
+                designers, and product managers,
+                to implement and advocate for best practices in web accessibility.
+              </p>
+
+              <ul className="" aria-label="Technologies used">
+                <li className=""><div className="">JavaScript</div></li>
+                <li className=""><div className="">TypeScript</div></li>
+                <li className=""><div className="">React</div></li>
+                <li className=""><div className="">Storybook</div></li>
+              </ul>
+            </div>
+          </a>
+        </li>
       </div>
     </div>
   );
