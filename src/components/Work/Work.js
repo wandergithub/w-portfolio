@@ -33,7 +33,7 @@ const Work = () => {
       <div className="project-container">
         {projects.map((item) => (
           <li className="project__item" key={item}>
-            <a href="httpe://Torre.ai" className="project_link" target="__blank">
+            <a href={item.linkToCompany} className="project_link" target={item.linkToCompany === '' ? '_self' : '_blank'} rel="noreferrer">
               <header>
                 <p>
                   {item.from}
