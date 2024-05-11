@@ -88,11 +88,11 @@ body {
 
 .bg-image {
   /* The image used */
-  background-image: url("./components/About/assets/bg1.jpg");
+  background-image: url("./components/About/assets/bg2.jpg");
 
   /* Add the blur effect */
-  filter: brightness(10%);
-  -webkit-filter: brightness(10%);
+  filter: brightness(30%);
+  -webkit-filter: brightness(30%);
   /* Full height */
   height: 100%;
   z-index: -1212;
