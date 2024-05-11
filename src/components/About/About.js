@@ -7,6 +7,7 @@ import { PropTypes } from 'prop-types';
 import me from './assets/me2.png';
 import FloatingSocial from '../FloatingSocial/FloatingSocial';
 import Button from '../shared/Button/Button';
+import myPdf from './resume.pdf';
 
 const About = ({ setCurrentPath }) => {
   useEffect(() => {
@@ -64,7 +65,7 @@ const About = ({ setCurrentPath }) => {
             </Link>
           </p>
           <a
-            href="https://docs.google.com/document/d/1WpT8wFZMX6YKyg4YN3l6hYIXNqSo1xpdtLb_zSInrt8/edit?usp=sharing"
+            href={myPdf}
             target="_blank"
             rel="noreferrer"
           >
