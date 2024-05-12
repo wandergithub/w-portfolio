@@ -4,10 +4,24 @@ import { SiRubyonrails } from 'react-icons/si';
 import image4 from '../../assets/img/blog-post-1.webp';
 import image2 from '../../assets/img/blog-post-2.png';
 import image1 from '../Assets/portfolio-6.webp';
+import image5 from '../Assets/countIslands.PNG';
 import image3 from '../../assets/img/portfolio/portfolio-1.webp';
 import budgetApp from '../../assets/img/portfolio/app_screenshot3.webp';
 
 const projects = [
+  {
+    title: 'Count Islands',
+    type: 'Algorithm',
+    image: image5,
+    description:
+      'Algorithm demostration of connected islands counting with JavaScript',
+    links: [
+      {
+        image: <GoBrowser title="Live demo icon" size="2em" />,
+        href: 'https://wandergithub.github.io/AM/',
+      },
+    ],
+  },
   {
     title: 'Growth Mindset',
     type: 'article',
