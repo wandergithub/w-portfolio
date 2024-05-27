@@ -1,4 +1,6 @@
-const projects = [
+import video from './preview.mp4';
+
+export const experience = [
   {
     title: 'Software Engineer Intern',
     company: 'Torre.ai',
@@ -22,8 +24,18 @@ const projects = [
     Built a navigation system that allowed users to navigate between multiple platform tools.
     Implemented responsiveness and made pages of the product accessible to mobile users.`,
     tech: ['PHP', 'JavaScript', 'CSS', 'HTML'],
-    linkToCompany: '',
   },
 ];
 
-export default projects;
+export const project = [
+  {
+    title: 'Money Flow',
+    company: 'Freelance',
+    from: 'may 2024',
+    to: 'present',
+    description:
+      'The Transaction Tracker Full Stack Application is designed to help users manage and analyze their financial transactions. This application allows users to list all their transactions, providing detailed information and analysis for better financial management. It features comparative analysis for the last two months, an annual overview graph, and calculates the influence percentage of each individual transaction on the overall financial status.',
+    tech: ['RESTapi', 'RoR', 'React.js'],
+    video,
+  },
+];

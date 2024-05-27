@@ -70,10 +70,9 @@ body[data-aos-easing="ease"] [data-aos] {
 
 .project-container {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 0 48px;
+  margin: 0 48px 30%;
   list-style: none;
 }
 
@@ -121,7 +120,7 @@ body[data-aos-easing="ease"] [data-aos] {
     width: max-content;
     margin: 0;
   }
-  padding: 1%;
+  padding: 14px;
 }
 
 .project_link_content {
