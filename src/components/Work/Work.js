@@ -2,6 +2,7 @@
 
 import './Work.scss';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import { CgExternal } from 'react-icons/cg';
 import { experience, project } from './Data/ProjectsList';
@@ -90,12 +91,10 @@ const Work = () => {
         </h2>
         {project.map((item) => (
           <li className="project__item" key={item}>
-            <a
-              href={item.linkToCompany}
+            <Link
+              to="/p1"
+              style={{ textDecoration: 'none' }}
               className="project_link"
-              target={item.linkToCompany === '' ? '_self' : '_blank'}
-              rel="noreferrer"
-              onClick={item.linkToCompany ? '' : (e) => e.preventDefault()}
             >
               <header>
                 <p>
@@ -137,7 +136,7 @@ const Work = () => {
                   ))}
                 </ul>
               </div>
-            </a>
+            </Link>
           </li>
         ))}
       </div>

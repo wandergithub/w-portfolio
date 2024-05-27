@@ -1,6 +1,6 @@
 import { RiMailSendLine } from 'react-icons/ri';
 import { FaMap, FaLinkedinIn } from 'react-icons/fa';
-import { GoMailRead } from 'react-icons/go';
+import { VscMailRead } from 'react-icons/vsc';
 import { SlCallIn } from 'react-icons/sl';
 import { BsGithub } from 'react-icons/bs';
 import emailjs from '@emailjs/browser';
@@ -92,7 +92,7 @@ const Contact = () => {
             </div>
           </div>
           <div>
-            <GoMailRead size="2em" color="#ffb400" className="contact-icon" />
+            <VscMailRead size="2em" color="#ffb400" className="contact-icon" />
             <div>
               <h4 className="text-uppercase no-m title-3">mail me</h4>
               <p className="no-m">wandergonzalez0@hotmail.com</p>

@@ -1,0 +1,28 @@
+
+ul {
+  list-style: disc;
+}
+
+.project_back_btn {
+  text-decoration: none;
+  color: white;
+  transition: translate 200ms;
+  width: fit-content;
+}
+
+.live_demo {
+  text-decoration: none;
+  color: white;
+  transition: translate 200ms;
+  width: fit-content;
+  margin-left: 10px;
+}
+
+.live_demo:hover {
+  color: #ffb400;
+  translate: 5px -5px;
+}
+.project_back_btn:hover {
+  color: #ffb400;
+  translate: -10px;
+}

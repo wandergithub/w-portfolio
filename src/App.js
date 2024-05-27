@@ -8,6 +8,7 @@ import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
 import Lab from './components/Lab/Lab';
 import './index.css';
+import P1 from './components/project1/p1';
 
 function App() {
   const location = useLocation();
@@ -32,6 +33,7 @@ function App() {
         <Route path="/work" element={<Work />} />
         <Route path="/lab" element={<Lab />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/p1" element={<P1 />} />
       </Routes>
     </>
   );
