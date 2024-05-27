@@ -48,7 +48,6 @@ const Work = () => {
                   {' '}
                   ─
                   {' '}
-                  +
                   {item.to}
                 </p>
               </header>
@@ -71,7 +70,9 @@ const Work = () => {
                   </div>
                 </h3>
 
-                <p>{item.description}</p>
+                <p>
+                  {item.description.map((d) => <li key={d}>{d}</li>)}
+                </p>
 
                 <ul aria-label="Technologies used">
                   {item.tech.map((tool) => (

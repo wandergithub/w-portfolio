@@ -70,7 +70,7 @@ body[data-aos-easing="ease"] [data-aos] {
 
 .project-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
   margin: 0 48px 30%;
   list-style: none;
