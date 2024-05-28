@@ -5,7 +5,7 @@ import { MdWeb } from 'react-icons/md';
 import { useEffect } from 'react';
 import video from '../Work/Data/preview.mp4';
 
-export default function P1() {
+export default function Project() {
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
