@@ -93,7 +93,7 @@ const Work = () => {
         {project.map((item) => (
           <li className="project__item" key={item}>
             <Link
-              to="/p1"
+              to="/project"
               style={{ textDecoration: 'none' }}
               className="project_link"
             >
