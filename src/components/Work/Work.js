@@ -26,6 +26,7 @@ const Work = () => {
         className="title-section text-left text-sm-center aos-init aos-animate"
         data-aos="fade-up"
         data-aos-duration="1200"
+        style={{ padding: '39px 0px' }}
       >
         <h1>
           my

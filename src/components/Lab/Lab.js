@@ -44,7 +44,12 @@ const Lab = () => {
         Front-End Components, blogs, fun coding and everything else
         accomplished on my spare software development time.
       </p>
-      <div className="project-container">
+      <div
+        className="project-container"
+        style={{
+          flexDirection: 'row', marginBottom: '0', flexWrap: 'wrap', justifyContent: 'center',
+        }}
+      >
         {projects.slice(0, length).map((project) => (
           <ProjectCard
             key={Math.random()}

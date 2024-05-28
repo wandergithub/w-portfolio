@@ -1,10 +1,16 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { IoArrowBackSharp } from 'react-icons/io5';
 import './p.scss';
 import { MdWeb } from 'react-icons/md';
+import { useEffect } from 'react';
 import video from '../Work/Data/preview.mp4';
 
-export default function p1() {
+export default function P1() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div style={{ padding: '2%' }}>
       <Link

@@ -8,7 +8,7 @@ import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
 import Lab from './components/Lab/Lab';
 import './index.css';
-import P1 from './components/project1/p1';
+import P1 from './components/project1/P1';
 
 function App() {
   const location = useLocation();
